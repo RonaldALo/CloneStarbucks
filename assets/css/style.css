@@ -6,9 +6,12 @@
     box-sizing: border-box;
     font-family: 'Open Sans',sans-serif;
 }
-
+:root{
+    --color-primary:#117050;
+   --font-title:"Oswald",sans-serif;
+}
 .line{
-    background: #117050;
+    background: var(--color-primary);
     height: 10px;
 }
 
@@ -44,6 +47,7 @@
     outline: none;
     border: 2px solid #a0a0a099;
     padding-left: 10px;
+    padding-right: 40px;
 }
 ::placeholder{
     color: rgba(0,0,0,0.5);
@@ -67,4 +71,47 @@
 .header--menu img{
     width: 24px;
     height: 24px;
+}
+
+/* Section do Banner */
+
+.banner{
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0px;
+    
+}
+.container--banner{
+    display: flex;
+    flex-direction: column;
+}
+.content_banner{
+    max-width: 680px;
+}
+.banner h1{
+    font-family: var(--font-title);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+.banner span{
+    font-size: 1rem;
+    margin: 20px 0px;
+    line-height: 1.6;
+}
+.banner--imagem{
+    margin-top: 60px;
+
+}
+.banner--imagem img{
+    width: 148px;
+    height: 148px;
+    border: 6px solid var(--color-primary);
+    border-radius: 50%;
+    margin-left: 30px;
+}
+.banner--imagem img:first-child{
+    margin-left: 0;
 }
