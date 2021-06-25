@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.line{
+    background: #117050;
+    height: 10px;
+}
+
+
+/* Container Defaut*/
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.header--area{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.logo img{
+    width: 64px;
+    height: 64px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-search form{
+    display: flex;
+}
+.header-search input{
+    font-size: 0.9rem;
+    width: 260px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #a0a0a099;
+    padding-left: 10px;
+}
+::placeholder{
+    color: rgba(0,0,0,0.5);
+    font-size: 1rem;
+}
+.header-search button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -25px;
+}
+.header-search button img{
+    margin: 12px 0px;
+    width: 16px;
+    height: 16px;
+}
+.header--menu{
+    margin-left: 50px;
+    cursor: pointer;
+}
+.header--menu img{
+    width: 24px;
+    height: 24px;
+}
